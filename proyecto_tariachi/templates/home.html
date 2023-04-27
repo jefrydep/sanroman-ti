@@ -1,161 +1,130 @@
-
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static '/styles/styles.css' %}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static '/styles/main.css' %}" />
     <title>Document</title>
-</head>
-<body>
-    <header class="header" data-header>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__nav__movil">
+          <div class="header__nav__movil__logo">
+            <h2>Inmobiliaria San roman </h2> 
 
-        <div class="overlay" data-overlay></div>
-    
-        <div class="header-top">
-          <div class="container">
-    
-            <ul class="header-top-list">
-    
-              <li>
-                <a href="mailto:info@homeverse.com" class="header-top-link">
-                  <ion-icon name="mail-outline"></ion-icon>
-    
-                  <span>info@SanRoman.com</span>
-                </a>
-              </li>
-    
-              <li>
-                <a href="#" class="header-top-link">
-                  <ion-icon name="location-outline"></ion-icon>
-    
-                  <address>Juliaca</address>
-                </a>
-              </li>
-    
-            </ul>
-    
-            <div class="wrapper">
-              <ul class="header-top-social-list">
-    
-                <li>
-                  <a href="#" class="header-top-social-link">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                  </a>
-                </li>
-    
-                <li>
-                  <a href="#" class="header-top-social-link">
-                    <ion-icon name="logo-twitter"></ion-icon>
-                  </a>
-                </li>
-    
-                <li>
-                  <a href="#" class="header-top-social-link">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                  </a>
-                </li>
-    
-                <li>
-                  <a href="#" class="header-top-social-link">
-                    <ion-icon name="logo-pinterest"></ion-icon>
-                  </a>
-                </li>
-    
-              </ul>
-    
-              <button class="header-top-btn">contactar</button>
+          </div>
+          <div class="header__nav__icon">Menu</div>
+        </div>
+        <!-- <nav class="header__nav">
+          <div class="header__nav__logo">JesfryDep@gmail.com</div>
+          <ul class="header__nav__list">
+            <li><a class="header__nav__list__item" href="#">Inicio</a></li>
+            <li><a class="header__nav__list__item" href="#">Servicios</a></li>
+            <li><a class="header__nav__list__item" href="#">Inmuebles</a></li>
+            <li><a class="header__nav__list__item" href="#">Nosotros</a></li>
+            <li><a class="header__nav__list__item" href="#">Conctanos</a></li>
+          </ul>
+          <button class="button__inmuebles">Ver Inmuebles</button>
+        </nav> -->
+        <section class="portada">
+          <div class="portada__content">
+            <p>
+              Trabajamos para que alcances el sueño de tener tu PROPIA VIVIENDA
+            </p>
+          </div>
+          <p>Asesoria consultoria y gestion inmobiliaria</p>
+          <button>Contactanos</button>
+        </section>
+      </div>
+    </header>
+    <main>
+      <section class="stats">
+        <div class="container__stats">
+        
+          <div class="container__stats__item"><h3>¡Porque elegirnos?</h3></div>
+          <div class="container__stats__item"><h3>3 años de experiencia</h3></div>
+          <div class="container__stats__item"><h3>+ 500 clientes</h3></div>
+          <div class="container__stats__item"><h3>+ 500ventas efectuadas</h3></div>
+        </div>
+      </section>
+      <section class="servicios">
+        <div class="container">
+          <div class="servicios__title">Servicios</div>
+          <div class="servicios__container">
+            <div class="servicios__container__item">lote1</div>
+            <div class="servicios__container__item">lote2</div>
+            <div class="servicios__container__item">lote3</div>
+            <div class="servicios__container__item">lote4</div>
+            <div class="servicios__container__item">lote5</div>
+            <div class="servicios__container__item">lote6</div>
+            <div class="servicios__container__item__contact">
+              <h2> Contactanos</h2>
+              <button>Click para contacatarnos</button>
             </div>
-    
           </div>
         </div>
-    
-        <div class="header-bottom">
-          <div class="container">
-    
-            <a href="#" class="logo">
-              <img src="./assets/images/logo.png" alt="Homeverse logo">
-            </a>
-    
-            <nav class="navbar" data-navbar>
-    
-              <div class="navbar-top">
-    
-                <a href="#" class="logo">
-                  <img src="./assets/images/logo.png" alt="Homeverse logo">
-                </a>
-    
-                <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
-                  <ion-icon name="close-outline"></ion-icon>
-                </button>
-    
-              </div>
-    
-              <div class="navbar-bottom">
-                <ul class="navbar-list">
-    
-                  <li>
-                    <a href="#home" class="navbar-link" data-nav-link>Inicio</a>
-                  </li>
-    
-                  <li>
-                    <a href="#about" class="navbar-link" data-nav-link>Acerca de</a>
-                  </li>
-    
-                  <li>
-                    <a href="#service" class="navbar-link" data-nav-link>Servicios</a>
-                  </li>
-    
-                  <li>
-                    <a href="#property" class="navbar-link" data-nav-link>Propiedades</a>
-                  </li>
-    
-                  <li>
-                    <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
-                  </li>
-    
-                  <li>
-                    <a href="#contact" class="navbar-link" data-nav-link>Contactanos</a>
-                  </li>
-    
-                </ul>
-              </div>
-    
-            </nav>
-    
-            <div class="header-bottom-actions">
-    
-              <button class="header-bottom-actions-btn" aria-label="Search">
-                <ion-icon name="search-outline"></ion-icon>
-    
-                <span>Search</span>
-              </button>
-    
-              <button class="header-bottom-actions-btn" aria-label="Profile">
-                <ion-icon name="person-outline"></ion-icon>
-    
-                <span>Profile</span>
-              </button>
-    
-              <button class="header-bottom-actions-btn" aria-label="Cart">
-                <ion-icon name="cart-outline"></ion-icon>
-    
-                <span>Cart</span>
-              </button>
-    
-              <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
-                <ion-icon name="menu-outline"></ion-icon>
-    
-                <span>Menu</span>
-              </button>
-    
-            </div>
-    
+      </section>
+    </main>
+    <footer>
+       <div class="container__footer">
+        <section class="description__footer">
+          <h2>Inmobiliarias del Peru</h2>
+          <div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus perferendis culpa eius dolores animi pariatur saepe. Porro omnis excepturi inventore at voluptatibus animi, quasi error a quis, dignissimos debitis quo.
+            Recusandae  ore blanditiis odit quaerat ratione! Excepturi quia ducimus eligendi ipsum commodi non at corrupti est distinctio.
+              provident  atibus optio ipsum esse voluptatum dol odio repellat.</p>
           </div>
-        </div>
-    
-      </header>
-</body>
+        </section>
+        <section class="container__links__footer">
+          <ul>
+            <h2>links recomendados</h2>
+            <li>catalogo de inmbueble</li>
+            <li>catalogo de inmbueble</li>
+            <li>catalogo de inmbueble</li>
+          </ul>
+          <ul>
+            <h2>links recomendados</h2>
+            <li>catalogo de inmbueble</li>
+            <li>catalogo de inmbueble</li>
+            <li>catalogo de inmbueble</li>
+          </ul>
+          <ul>
+            <h2>links recomendados</h2>
+            <li>catalogo de inmbueble</li>
+            <li>catalogo de inmbueble</li>
+            <li>catalogo de inmbueble</li>
+          </ul>
+
+        </section>
+        <section class="container__information__footer">
+          <h2>Necesitas mas informacion?</h2>
+       <h2>correo electronio</h2>
+       <h3>jefrydep@gamil.com</h3>
+
+        </section>
+        <section class="container__footer__botton">
+          <h2>INgeniera de sotware develops in the world</h2>
+          <div>
+            <div>
+              icon facebook
+            </div>
+            <div>
+              icon facebook
+            </div>
+            <div>
+              icon facebook
+            </div>
+            <div>
+              icon facebook
+            </div>
+          </div>
+
+        </section>
+
+       </div>
+    </footer>
+  </body>
 </html>
